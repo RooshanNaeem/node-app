@@ -20,5 +20,5 @@ jobs:
           authHeader: ${{ secrets.CONTRAST_AUTH_HEADER }}
           apiUrl: ${{ secrets.CONTRAST_API_URL }}
           filePath: package.json
-          severity: high
+          severity: medium
           fail: true
