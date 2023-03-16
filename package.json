@@ -1,0 +1,32 @@
+{
+  "name": "simple-demo-node-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.16.3",
+    "lodash": "^4.17.11"
+  },
+  "devDependencies": {
+    "jshint": "^2.9.6"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/mismatso/simple-demo-node-app.git"
+  },
+  "keywords": [
+    "node.js",
+    "demo",
+    "simple"
+  ],
+  "author": "Misael Matamoros <mismatso@gmail.com> (https://gitlab.com/mismatso)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/mismatso/simple-demo-node-app/issues"
+  },
+  "homepage": "https://gitlab.com/mismatso/simple-demo-node-app#readme"
+}
