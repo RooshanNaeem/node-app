@@ -1,9 +1,9 @@
 name: ZAP Scan
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "zapscan" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "zapscan" ]
   workflow_dispatch:
 jobs:
   build:
