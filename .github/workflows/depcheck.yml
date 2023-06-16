@@ -23,9 +23,9 @@ jobs:
           failOnCVSS: 7
           others: '--disableOssIndex'
       - name: Check CVSS score
-      if: ${{ steps.Depcheck.outputs.cvssScore > 7 }}
-      run: |
-        curl -X POST -H 'Content-type: application/json' --data "{'text':'CVSS score is greater than 7. Alert!'}" ${{ secrets.SLACK_WEBHOOK_URL }}
+        if: ${{ steps.Depcheck.outputs.cvssScore > 7 }}
+        run: |
+          curl -X POST -H 'Content-type: application/json' --data "{'text':'CVSS score is greater than 7. Alert!'}" ${{ secrets.SLACK_WEBHOOK_URL }}
       - name: Upload Test results
         if: always()
         uses: actions/upload-artifact@master
